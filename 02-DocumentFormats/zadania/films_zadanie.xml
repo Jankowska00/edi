@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<films>
+    <film>
+        <title>Wielki błękit</title>
+        <genre>dramat</genre>
+        <year>1988</year>
+        <personal_rating>7,5</personal_rating>
+        <director>Luc Besson</director>
+        <actors>Jean Reno</actors>
+        <actors>Rosanna Arquette</actors>
+        <actors>Jean-Marc Barr</actors>
+    </film>
+    <film>
+         <title>Czarownica 2</title>
+        <genre>fantasy</genre>
+        <year>2019</year>
+        <personal_rating>7,4</personal_rating>
+        <director>Joachim Rønning</director>
+        <actors>Angelina Jolie</actors>
+        <actors>Elle Fanning</actors>
+        <actors>Michelle Pfeiffer</actors>
+        </film>
+</films>
+
