@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<films>
+    <film>
+        <title language="polski">Wielki błękit</title>
+	<title language="francais">Le grand bleu</title>
+        <genre>dramat</genre>
+        <year>1988</year>
+        <personal_rating>7,5</personal_rating>
+        <director>Luc Besson</director>
+        <actors>Jean Reno</actors>
+        <actors>Rosanna Arquette</actors>
+        <actors>Jean-Marc Barr</actors>
+    </film>
+	<film>
+         	<title language="polski">Czarownica 2</title>
+		<title language="english">Maleficent: Mistress of Evil</title>
+        	<genre>fantasy</genre>
+        	<year>2019</year>
+        	<personal_rating>7,4</personal_rating>
+        	<director>Joachim Rønning</director>
+        	<actors>Angelina Jolie</actors>
+        	<actors>Elle Fanning</actors>
+        	<actors>Michelle Pfeiffer</actors>
+	</film>
+	<film>
+        	<title language="polski">Apollo 13</title>
+		<title language="english">Apollo 13</title>
+        	<genre>dramat</genre>
+        	<year>1995</year>
+        	<personal_rating>7,4</personal_rating>
+        	<director>Ron Howard</director>
+        	<actors>Tom Hanks</actors>
+        	<actors>Bill Paxton</actors>
+        	<actors>Kevin Bacon</actors>
+	</film>
+	<film>
+        	<title language="polski">Głupi i głupszy</title>
+		<title language="english">Dumb and Dumber</title>
+        	<genre>komedia</genre>
+        	<year>1994</year>
+        	<personal_rating>6,1</personal_rating>
+        	<director>Bobby Farelly</director>
+        	<actors>Jeff Daniels</actors>
+        	<actors>Jim Carrey</actors>
+        	<actors>Lauren Holly</actors>
+	</film>
+	<film>
+        	<title language="polski">Farciarz Gilmore</title>
+		<title language="english">Happy Gilmore</title>
+        	<genre>komedia</genre>
+        	<year>1996</year>
+        	<personal_rating>6,5</personal_rating>
+        	<director>Denis Dugan</director>
+        	<actors>Adam Sandler</actors>
+        	<actors>Christopher McDonald</actors>
+        	<actors>Julie Bowen</actors>
+	</film>
+</films>
+
