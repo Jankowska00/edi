@@ -8,14 +8,16 @@
 		<h1>Try to guess</h1>
 
 		<script>
-			// read user's number (popup window)
+			var guess = prompt("Type number"); // read user's number (popup window)
 			
-			// create a random number
+			var number = Math.floor(Math.random()*6);// create a random number
 			
-			// compare the numbers
-			
-			// show results (popup window)
-			
+			if(guess == number){
+				window.alert("Good Work");
+				}// compare the numbers
+			else{
+				window.alert("Sorry")
+			};// show results (popup window)
 		</script>
 	</body>
 </html>
