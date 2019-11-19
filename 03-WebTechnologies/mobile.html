@@ -6,7 +6,19 @@
 	</head>
 	<body>
 		<h1>Create mobile phone</h1>
+		<button id="button" type="button" onclick="message()">The Mobile Phone</button>
 		<script>
+			var myMobilePhone = {
+					name: 		'IPhone',
+					model:		 7,
+					database:	'https://en.wikipedia.org/wiki/IPhone_7',
+					specs:		{price: 1799.00, language:'English', waterproof:true},
+					camera:		['12 Mpix ', 'Zoom 5x ', 'Resolution: 4608x2592'],
+			};
+			function message() {
+				window.alert(myMobilePhone.name+'\n'+myMobilePhone.model+'\n'+myMobilePhone.database+'\n'+myMobilePhone.specs.price+'\n'+myMobilePhone.specs.language+'\n'+myMobilePhone.specs.waterproof+'\n'+myMobilePhone.camera);
+			}
 		</script>
+	
 	</body>
 </html>

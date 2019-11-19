@@ -13,14 +13,15 @@
 				var BMI = {
 						weight: null,
 						height: null,
-						enterData: function(){
-							// enter weight and height, and assign them to the object properties
+						enterData: function dane(){
+							const weight = prompt('Podaj swoją wagę:');
+							const height = prompt('Podaj swój wzrost:');// enter weight and height, and assign them to the object properties
 						},
-						calculate: function(){
-							return // create a formula for calculating bmi
+						calculate: function BMI(){
+							return (weight/(height*2))// create a formula for calculating bmi
 						},
-						display: function(){
-							// display the result in a popup window
+						display: function message(){
+							window.alert('Twoje BMI wynosi:'+BMI())// display the result in a popup window
 						}
 				}
 			

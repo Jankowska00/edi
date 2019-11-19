@@ -8,10 +8,24 @@
 		<h1>Create methods</h1>
 		<script>
 			var myArray = [];
-			for(i = 1) myArray.push(Math.floor(Math.random()*6));
-
-
-				
+			for (i=0; i < 5; i++) {
+				myArray.push(Math.floor(Math.random()*6));
+			}
+			console.log(myArray);
+			var znacznik = 0
+			for (i=0; i<5; i++) {
+				if (myArray[i]>myArray[i+1]) {
+					znacznik += 1;
+				}
+			}
+			if (znacznik >= 1) {
+				console.log("Tablica nie jest posortowana");
+			}
+			else {
+				console.log("Tablica jest posortowana");
+			}
+			
+			
 			// display results (min,max,avg,lth) in the console
 			// ...
 		</script>
