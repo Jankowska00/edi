@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Pink Floyd</title>
+		<title onclick="y()">Pink Floyd</title>
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<h1>Another Brick in the Wall</h1>
-		<h3>Pink Floyd</h3>
-		<p>We don't need no education<br>
+		<h1 id="tytul" onclick="x()">Another Brick in the Wall</h1>
+		<h3 on click="lyrics()">Pink Floyd</h3>
+		<p id="tekst">We don't need no education<br>
 		We don't need no thought control<br>
 		No dark sarcasm in the classroom<br>
 		Teachers leave them kids alone<br>
@@ -20,8 +20,20 @@
 		and psychedelic music.</p>
 		
 		<script>
-			// a JavaScript code here ...
-			
+		function x() {
+			//document.getElementById("tytul").newElement.appendChild("(Part2)"); 
+			var t = document.createTextNode("(Part 2)");
+  			document.getElementById("tytul").appendChild(t); 
+        } 
+		function y() {
+			var t = document.getElementsByClassName("style");
+			document.getElementByElement("tekst").appendChild(t);
+		}
+    </script> 
+</body> 
+  
+</html> 
+
 		</script>
 	</body>
 </html>
