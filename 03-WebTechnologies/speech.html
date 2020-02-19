@@ -38,10 +38,8 @@
 							];
 				
 				
-				console.log(first[n()]);
-				console.log(second[n()]);
-				console.log(third[n()]);
-				console.log(fourth[n()]);
+				var sentence = first[n()]+' '+second[n()]+' '+third[n()]+' '+fourth[n()];
+                console.log(sentence);
 			
 				// complete a JavaScript code here ...
 				// ...
@@ -50,10 +48,9 @@
 
 			// returns random integer from 0 to 9
 			function n() {
-					return Math.floor(Math.random()*9);
+				return Math.floor(Math.random()*10);
 			}
 				// ...
-			createSpeech();
 		</script>
 	</body>
 </html>

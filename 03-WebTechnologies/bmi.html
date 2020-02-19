@@ -14,18 +14,18 @@
 						weight: null,
 						height: null,
 						enterData: function dane(){
-							const weight = prompt('Podaj swoją wagę:');
-							const height = prompt('Podaj swój wzrost:');// enter weight and height, and assign them to the object properties
+							weight = prompt('Podaj swoją wagę w kg:');
+							height = prompt('Podaj swój wzrost w metrach:');// enter weight and height, and assign them to the object properties
 						},
 						calculate: function BMI(){
-							return (weight/(height*2))// create a formula for calculating bmi
+							return (weight/(height*2));// create a formula for calculating bmi
 						},
 						display: function message(){
-							window.alert('Twoje BMI wynosi:'+BMI())// display the result in a popup window
+							window.alert('Twoje BMI wynosi:'+BMI.calculate());// display the result in a popup window
 						}
 				}
-			
-				// call BMI methods
+				BMI.enterData();
+				BMI.display();// call BMI methods
 				// ...
 			
 			}

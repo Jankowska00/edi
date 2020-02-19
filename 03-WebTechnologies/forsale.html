@@ -7,6 +7,38 @@
 	<body>
 		<h1>Houses for sale</h1>
 		<script>
+			function House(bedrooms, facilities, price, street, town, phone) {
+				this.bedrooms = bedrooms;
+				this.facilities = facilities;
+				this.price = price;
+				this.address = {
+					street: street,
+					town: town,
+				}
+				this.phone = phone;
+				this.change = function changePrice(newPrice){
+					this.price = newPrice;
+				}
+				this.addfacilities = function addFacility(newFacility) {
+					this.facilities = (this.facilities + newFacility);
+				}
+				this.description = function description() {
+					return 'Description'+'\n'+'Bedrooms: '+this.bedrooms+'\n'+'Facilities: '+this.facilities+'\n'+'Adress: '+street+', '+town+'\n'+'Phone: '+this.phone+'\n'
+				}
+			}
+			var house1 = new House(4, ['garden', 'garage', 'swimming pool'], 400000, 'Rudford St', 'London', 894567834);
+			var house2 = new House(2,['playground', 'garage'], 200000, 'Green Av', 'Liverpool', 362573628);
+			var house3 = new House(3, ['great view', 'game room'], 300000, 'Blue St', 'Massachussets', 836283647);
+			var house4 = new House(1, ['bath', 'modern'], 150000, 'Simple Av', 'London', 123456789);
+			var house5 = new House(6, ['airconditioning','heated floor', 'humidifier'], 100000000, 'Richmond St', 'Los Angeles', 987654321);
+
+			
+			console.log(house1.description());
+			console.log(house2.description());
+			console.log(house3.description());
+			console.log(house4.description());
+			console.log(house5.description());
+			
 		</script>
 	</body>
 </html>

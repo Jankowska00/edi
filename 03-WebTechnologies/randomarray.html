@@ -8,15 +8,33 @@
 		<h1>An array</h1>
 		<script>
 			var myArray = []
+			var sorted = 0;
 
+            for (i=0;i<5;i++){
+                myArray.push(Math.floor(Math.random()*5)+1);
+            };
 			// fill in the array with random values
-			// ...
-
+		
+			for (j=0;j<5;j++){
+                if (myArray[j]>=myArray[j+1]) {
+                    sorted += 1;
+                }
+                else {
+                    sorted += 0;
+                };
+            };
 			// check if the array is ordered
-			// ...
-
+		
+			if (sorted == 4) {
+                console.log(myArray);
+                console.log("Tablica jest posortowana");
+            }
+            else {
+                console.log(myArray);
+                console.log("Tablica nie jest posortowana");
+            };
 			// display the array and information in the console
-			// ...
+		
 
 
 		</script>

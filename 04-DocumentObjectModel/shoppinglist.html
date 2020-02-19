@@ -9,8 +9,8 @@
 <body>
     <h1>Shopping List</h1>
     <p>
-        New item: <input type="text" name="item">
-        <button type="button">Add</button>
+        New item: <input type="text" name="item" id="item">
+        <button type="button" onclick="add()">Add</button>
     </p>
     <h3>List of items</h3>
     <ol>
@@ -20,6 +20,15 @@
     </ol>
 
     <script>
+        function add() {
+            var lista = document.getElementsByTagName("ol")[0];
+            var item = document.getElementById("item").value;
+
+            newEl = document.createElement("li");
+            newText = document.createTextNode(item);
+            newEl.appendChild(newText)
+            lista.appendChild(newEl)
+        };
     	// a JavaScript code here ...
 
     </script>

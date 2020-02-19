@@ -7,25 +7,42 @@
 	<body>
 		<h1>Create methods</h1>
 		<script>
-			var myArray = [];
-			for (i=0; i < 5; i++) {
-				myArray.push(Math.floor(Math.random()*6));
-			}
-			console.log(myArray);
-			var znacznik = 0
-			for (i=0; i<5; i++) {
-				if (myArray[i]>myArray[i+1]) {
-					znacznik += 1;
-				}
-			}
-			if (znacznik >= 1) {
-				console.log("Tablica nie jest posortowana");
-			}
-			else {
-				console.log("Tablica jest posortowana");
-			}
-			
-			
+			var less=0
+			var sum=0
+			var myArray = {
+					arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],
+					min: function(){
+						myArray.arr.sort(function(a,b){return b-a});
+						return myArray.arr[0];
+						// maximum value (sort the arr and take the last value, use a built-in function)
+					},		
+					max: function(){
+						myArray.arr.sort(function(a,b){return a-b});
+						return myArray.arr[0];
+					},		// look at the min method comment
+					avg: function(){
+						for (j=0;j<myArray.arr.length;j++) {
+							sum=sum+myArray.arr[j];
+						}
+						var average = sum/(myArray.arr.length);
+						return average
+					},		// avarage value
+					lth: function(val){
+						for (i=0;i<myArray.arr.length;i++) {
+							if (myArray.arr[i]<val) {
+								less++
+							}
+							else {
+								less = less + 0
+							}
+						}
+						return less
+					}	// the number of arr values less than 'val'
+			};
+			console.log(myArray.min());
+			console.log(myArray.max());
+			console.log(myArray.avg());
+			console.log(myArray.lth(6));
 			// display results (min,max,avg,lth) in the console
 			// ...
 		</script>
